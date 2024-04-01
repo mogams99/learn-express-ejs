@@ -7,5 +7,12 @@
 </head>
 <body>
     <h1>Random Number: <%= random %></h1>
-</body>
+    <% if (random % 2 === 0) { %>
+        <h3>Bilangan Genap</h3>
+    <% } else { %>
+        <h3>Bilangan Ganjil</h3>
+    <% } %>
+    </body>
+
+    <h3>That number is: <%= random%2 === 0 ? 'even' : 'odd' %></h3>
 </html>
